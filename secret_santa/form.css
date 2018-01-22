@@ -1,0 +1,19 @@
+.label {
+  padding: .5em;
+}
+
+.name_email {
+
+  display: inline-block;
+}
+
+
+.button {
+
+  margin:20px;
+  text-align: center;
+}
+
+#firstNameLabel {
+  padding-left: 30px;
+}
