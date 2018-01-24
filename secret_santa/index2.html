@@ -63,13 +63,21 @@
   </form>
 
   <table style="width:100%">
-    <tr>
-      <th>Secret Santa</th>
-      <th>Receiver</th>
-    </tr>
-    <tr>
+    <thead>
+      <tr>
+        <th>Secret Santa</th>
+        <th>Receiver</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- generated with javascript  -->
+    </tbody>
 
-    </tr>
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    }
+</style>
 
   </table>
 
@@ -87,24 +95,24 @@
       function generate(){
 
           var a = [{name: 'sam'}, {name: 'dustin'}, {name:'jon'}, {name:'max'}, {name:'jason'}];
-        
 
 
 
+          $("tbody tr").remove();
            shuffleArray(a);
-           for(let i=0; i<a.length; i++)
-             {
-              if( i != a.length - 1){
+           for(let i=0; i<a.length; i++) {
+             const santa_index = i;
+             let receiver_index = i + 1;
 
-              $("table").append(`<tr><td>${a[i].name}</td><td>${a[i+1].name}</td></tr>`);
-               //document.write(a[i].name + " is the secret santa for " + a[i+1].name);
+              if( i == a.length - 1){
+                receiver_index = 0
+              }
 
-              }
-              else {
-                $("table").append(`<tr><td>${a[i].name}</td><td>${a[i+1].name}`);
-                //  document.write( a[i].name + " is the secret santa for " + a[0].name);
-              }
-             }
+              const santa_name = a[santa_index].name;
+              const receiver_name = a[receiver_index].name;
+
+              $("table tbody").append(`<tr><td>${santa_name}</td><td>${receiver_name}</td></tr>`);
+            }
 
             function shuffleArray(array) {
                for (var i = array.length - 1; i > 0; i--) {
