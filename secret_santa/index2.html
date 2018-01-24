@@ -57,19 +57,77 @@
         </div> <br>
 
         <div class="button">
-          <button type="button" onclick= 'alert("The Elves Thank You")'>Santa!</button>
+          <button type="submit">Santa!</button>
         </div>
 
   </form>
 
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Secret Santa</th>
+        <th>Receiver</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- generated with javascript  -->
+    </tbody>
 
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    }
+</style>
 
-  </body>
+  </table>
 
-  <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
   <!-- Javascript -->
   <script src="app.js"></script>
-  
+
+
+ <script type="text/javascript">
+      $("#exchange").submit(function(event) {
+        event.preventDefault();
+        generate();
+      });
+      function generate(){
+
+          var a = [{name: 'sam'}, {name: 'dustin'}, {name:'jon'}, {name:'max'}, {name:'jason'}];
+
+
+
+          $("tbody tr").remove();
+           shuffleArray(a);
+           for(let i=0; i<a.length; i++) {
+             const santa_index = i;
+             let receiver_index = i + 1;
+
+              if( i == a.length - 1){
+                receiver_index = 0
+              }
+
+              const santa_name = a[santa_index].name;
+              const receiver_name = a[receiver_index].name;
+
+              $("table tbody").append(`<tr><td>${santa_name}</td><td>${receiver_name}</td></tr>`);
+            }
+
+            function shuffleArray(array) {
+               for (var i = array.length - 1; i > 0; i--) {
+                   var j = Math.floor(Math.random() * (i + 1));
+                   var temp = array[i];
+                   array[i] = array[j];
+                   array[j] = temp;
+               }
+            }
+}
+</script>
+
+  </body>
+
+  <!-- jquery -->
+
+
 </html>
