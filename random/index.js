@@ -1,3 +1,8 @@
+import React from 'react';
+import app from './components/app' ;
+
+
+
 let users = [{name:"tim", email: "tim@gmail.com"},{name:"lisa", email:"lisa@gmail.com"}];
 // users.push({name:"bar", email: "bar@gmail.com"});
 

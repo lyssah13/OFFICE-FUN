@@ -1,9 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import HomePage from './components/HomePage';
+import SecretSanta from './components/SecretSanta';
+import GetRandom from './components/GetRandom';
+import Split  from './components/Split';
 import registerServiceWorker from './registerServiceWorker';
 import SecretSanta from './components/SecretSanta.js';
 
-ReactDOM.render(<SecretSanta />, document.getElementById('root'));
+const Root = () => {
+  return (
+    <BrowserRouter>
+      <div>
+        <Route exact path="/" component={ HomePage } />
+        <Route path="/secret-santa" component={ SecretSanta } />
+        <Route path="/get-random" component={ GetRandom } />
+        <Route path="/split" component={ Split } />
+      </div>
+    </BrowserRouter>
+  )
+}
+
+render( <Root />, document.querySelector('#root') );
 registerServiceWorker();

@@ -1,0 +1,118 @@
+/******************************************************
+GENERAL
+******************************************************/
+
+FONTS
+body {
+  font-family: 'Oswald', sans-serif;
+}
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+h3 {
+  font-family: 'Playfair Display', serif;'
+  font-size: 90px;
+}
+p {
+  text-align: center;
+}
+img {
+  align-items: center;
+}
+.center_image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+ul {
+    text-align: center;
+}
+/******************************************************
+NAVIGATION
+******************************************************/
+
+/******************************************************
+HOME
+******************************************************/
+
+/******************************************************
+HEADER
+******************************************************/
+#header {
+  background-color: #334d5c;
+  height: 243px;
+}
+#santa {
+  background-color: #f24e49;
+  height: 150px;
+}
+/******************************************************
+CONTACT AND MEDIA
+******************************************************/
+#contact {
+  background-color: #A0CCE3;
+  padding: 15px 5px;
+}
+
+#contact header h2 {
+  text-align: center;
+}
+
+#contact form {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#contact input, #contact textarea {
+  width: 95%;
+  border-radius: 5px;
+  border-color: #1B2355;
+  border-width: 1px;
+}
+
+#contact input:focus, #contact textarea:focus {
+  outline: 3px solid rgba(27, 35, 85, 0.5);
+  -moz-outline-radius: 25px;
+}
+
+#contact label, #contact input {
+  display: block;
+}
+
+#contact input[type="submit"] {
+  background-color: #F66464;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #F66464;
+}
+
+#contact input[type="submit"]:active {
+  background-color: #c33f3f;
+  border-color: #E79294
+}
+
+/******************************************************/
+                 /*MEDIA QUERIES*/
+/******************************************************
+NAVIGATION
+******************************************************/
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: white;
+  }
+}
+
+/******************************************************
+GOODBYE
+******************************************************/
+#goodbye {
+  padding-top: 3px;
+  text-align:center;
+  position:fixed;
+  color:#fff;
+  left:0px;
+  bottom:0px;
+  height:40px;
+  width:100%;
+  background:#334d5c;
+}
