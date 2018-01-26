@@ -45,36 +45,20 @@ class GetRandom extends Component {
       return (
         <div className="GetRandom">
 
-          <div id="" ClassName="row">
+          <div id="get-random" ClassName="row">
             <div ClassName="">
               <center>
-                <img src="images/iconSanta.png"
+                <img src="images/iconRandom.png"
                 border="0" alt="" title=""/>
               </center>
             </div>
-            <div id="" ClassName="">
-                <p>Need 2 teams?
-                Are you organizing a sports
-                event in your office or any
-                kind of activity and you need
-                to split your team?
-                and you dont want to be bias.
-                Our users usually need to split a team for:
-                <ul>
-                  <li> Sport team</li> <li> Winners / Losers</li> <li> Assign duties or roles</li>
-                </ul>
-              </p>
-            </div>
           </div>
-          <header className="GetRandom-header">
-            <h2 className="App-title">Get Random</h2>
-          </header>
           { this.state.random_user === null
             ? <UsersTable records={records} />
             : <DisplayRandomUser random_user={ this.state.random_user } />
           }
           <p>
-            <a href="#" onClick={ (e) => { this.setRandomUser(e) } }>Get Random!</a>
+            <a href="#" className="btn btn-warning btn-lg" onClick={ (e) => { this.setRandomUser(e) } }>Get Random!</a>
           </p>
 
         </div>
@@ -86,7 +70,13 @@ class GetRandom extends Component {
 function DisplayRandomUser(props) {
   if (props.random_user != null) {
     return (
-      <p>{ props.random_user.fields.name }</p>
+      <div className="card jumbotron-card">
+        <div className="jumbotron card-body">
+          <h2>
+            { props.random_user.fields.name }
+          </h2>
+        </div>
+      </div>
     );
   }
   else {
@@ -96,7 +86,7 @@ function DisplayRandomUser(props) {
 
 function UsersTable(props) {
   return (
-    <table>
+    <table className="table">
       <thead>
         <tr>
           <th scope="col">ID</th>
