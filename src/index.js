@@ -7,6 +7,7 @@ import SecretSanta from './components/SecretSanta';
 import GetRandom from './components/GetRandom';
 import Split  from './components/Split';
 import registerServiceWorker from './registerServiceWorker';
+import SecretSanta from './components/SecretSanta.js';
 
 const Root = () => {
   return (
