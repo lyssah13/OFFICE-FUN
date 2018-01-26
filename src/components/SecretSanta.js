@@ -89,7 +89,7 @@ class SecretSanta extends Component{
 
 function UsersTable(props) {
   return (
-    <table>
+    <table className="table">
       <thead>
         <tr>
           <th scope="col">ID</th>
@@ -114,7 +114,7 @@ function UsersTable(props) {
 
 function AssignmentsTable(props) {
   return (
-    <table>
+    <table className="table">
       <thead>
         <tr>
           <th scope="col">Secret Santa</th>
