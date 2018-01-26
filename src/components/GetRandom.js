@@ -44,6 +44,28 @@ class GetRandom extends Component {
     else {
       return (
         <div className="GetRandom">
+
+          <div id="" ClassName="row">
+            <div ClassName="">
+              <center>
+                <img src="images/iconSanta.png"
+                border="0" alt="" title=""/>
+              </center>
+            </div>
+            <div id="" ClassName="">
+                <p>Need 2 teams?
+                Are you organizing a sports
+                event in your office or any
+                kind of activity and you need
+                to split your team?
+                and you dont want to be bias.
+                Our users usually need to split a team for:
+                <ul>
+                  <li> Sport team</li> <li> Winners / Losers</li> <li> Assign duties or roles</li>
+                </ul>
+              </p>
+            </div>
+          </div>
           <header className="GetRandom-header">
             <h2 className="App-title">Get Random</h2>
           </header>
@@ -54,6 +76,7 @@ class GetRandom extends Component {
           <p>
             <a href="#" onClick={ (e) => { this.setRandomUser(e) } }>Get Random!</a>
           </p>
+
         </div>
       );
     }
