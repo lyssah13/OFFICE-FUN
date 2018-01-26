@@ -58,7 +58,7 @@ class GetRandom extends Component {
             : <DisplayRandomUser random_user={ this.state.random_user } />
           }
           <p>
-            <a href="#" className="btn btn-warning btn-lg" onClick={ (e) => { this.setRandomUser(e) } }>Get Random!</a>
+            <a href="#" className="btn btn-warning btn-lg" onClick={ (e) => { this.setRandomUser(e) } }>SUBMIT</a>
           </p>
 
         </div>

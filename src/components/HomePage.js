@@ -16,7 +16,7 @@ class HomePage extends Component {
                 onmouseout="this.src='images/icons1.png'"
                 border="0" alt="" title=""/>
                 </a>
-                <p>Send a private email to all the participants in a second! And to you, the organizar, we will also send a random person to be the First to start! </p>
+                <p>The easy way to assign secret santa!</p>
 
             </center>
             </div>
@@ -28,12 +28,7 @@ class HomePage extends Component {
                 onmouseout="this.src='images/icons2.png'"
                 border="0" alt="" title=""/>
                 <p>Need 2 teams?
-                Are you organizing a sports event in your office or any kind of activity and you need to split your team?
-                and you dont want to be bias.
-                Our users usually need to split a team for:
-                - Sport team
-                - Winners / Losers
-                - Assign duties or roles</p>
+                Divide and Conquer</p>
               </center>
             </div>
 
@@ -43,9 +38,7 @@ class HomePage extends Component {
                 onmouseover="this.src='images/icons3hover.png'"
                 onmouseout="this.src='images/icons3.png'"
                 border="0" alt="" title=""/>
-                <p>Are you organizing a contest, giveaway, raffle* or survey  between coand need to draw a winner or winners, and you can also
-                allocate prizes to winners.
-                Our users usually need to choose a winner from: </p>
+                <p>Allocate prizes to multiple winners.</p>
               </center>
             </div>
 
@@ -57,7 +50,7 @@ class HomePage extends Component {
                 onmouseout="this.src='images/icons4.png'"
                 border="0" alt="" title=""/>
                 </a>
-                <p>Are you organizing a contest, giveaway, raffle* or survey amongst the office and need to draw a random name / number? Our customers usually need to choose a winner from: </p>
+                <p>Who's the lucky winner? </p>
               </center>
             </div>
           </div>

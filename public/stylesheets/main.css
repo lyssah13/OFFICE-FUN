@@ -2,9 +2,10 @@
 GENERAL
 ******************************************************/
 
-FONTS
+
 body {
   font-family: 'Oswald', sans-serif;
+  padding-bottom: 3rem;
 }
 h1 {
   font-family: 'Anton', sans-serif;
@@ -131,6 +132,7 @@ GOODBYE
 #goodbye {
   padding-top: 3px;
   text-align:center;
+  position: fixed;
   color:#fff;
   left:0px;
   bottom:0px;
