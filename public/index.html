@@ -1,40 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <!-- Information for the Browser and Applications -->
+    <meta charset="UTF-8">
+    <!-- Added this -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OFFICE FUN</title>
+    <meta name="author" content="">
+    <meta name="description" content="Office Fun">
+    <meta name="keywords" content="">
+    <!-- Added this -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- External documents -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald:40|Playfair+Display:700i" rel="stylesheet">
+    <!-- Added this -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- My files -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript"></script>
   </head>
+
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between" style="background-color: #00000">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#secret-santa">Secret Santa</a>
+          <a class="nav-item nav-link" href="#split">Split it out</a>
+          <a class="nav-item nav-link" href="#raffle">Rafflelicious</a>
+          <a class="nav-item nav-link" href="#random">Get Random</a>
+        </div>
+      </div>
+    </nav>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- <section id="header">
+      <header class="text-center">
+        <picture>
+          <source media="(min-width: 1600px)" srcset="images/officefunheader.png">
+          <source media="(min-width: 769px)" srcset="images/officefunheaderM.png">
+          <source media="(min-width: 426px)" srcset="images/officefunheaderS.png">
+          <img src="images/officefunheaderS.png" alt="Lisa Warhol" class="img-fluid">
+        </picture>
+      </header>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+    <section id="options" class="">
+      <div id="" class="row">
+        <div class="col-xs-12 col-md-6 col-lg-2 offset-lg-2">
+          <center>
+            <img id="my-img" style="width: 250px; height: 250px;"
+            src="images/icons1.png"
+            onmouseover="this.src='images/icons1hover.png'"
+            onmouseout="this.src='images/icons1.png'"
+            border="0" alt="" title=""/>
+            <p>Send a private email to all the participants in a second! And to you, the organizar, we will also send a random person to be the First to start! </p>
+        </center>
+        </div>
+
+        <div id="" class="col-xs-12 col-md-6 col-lg-2">
+          <center>
+            <img style="width: 250px; height: 250px;" src="images/icons2.png"
+            onmouseover="this.src='images/icons2hover.png'"
+            onmouseout="this.src='images/icons2.png'"
+            border="0" alt="" title=""/>
+            <p>Need 2 teams?
+            Are you organizing a sports event in your office or any kind of activity and you need to split your team?
+            and you dont want to be bias.
+            Our users usually need to split a team for:
+            - Sport team
+            - Winners / Losers
+            - Assign duties or roles</p>
+          </center>
+        </div>
+
+        <div id="" class="col-xs-12 col-md-6 col-lg-2">
+          <center>
+            <img style="width: 250px; height: 250px;" src="images/icons3.png"
+            onmouseover="this.src='images/icons3hover.png'"
+            onmouseout="this.src='images/icons3.png'"
+            border="0" alt="" title=""/>
+            <p>Are you organizing a contest, giveaway, raffle* or survey  between coand need to draw a winner or winners, and you can also
+            allocate prizes to winners.
+            Our users usually need to choose a winner from: </p>
+          </center>
+        </div>
+
+        <div id="" class="col-xs-12 col-md-6 col-lg-2">
+          <center>
+            <img style="width: 250px; height: 250px;" src="images/icons4.png"
+            onmouseover="this.src='images/icons4hover.png'"
+            onmouseout="this.src='images/icons4.png'"
+            border="0" alt="" title=""/>
+            <p>Are you organizing a contest, giveaway, raffle* or survey amongst the office and need to draw a random name / number? Our customers usually need to choose a winner from: </p>
+          </center>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="goodbye"> Handcrafted with ♥ from Miami, FL by Lisa, Tim & Matias </section>
+
+    </body>
