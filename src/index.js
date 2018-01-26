@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
-import './index.css';
+// import './index.css';
 import HomePage from './components/HomePage';
 import SecretSanta from './components/SecretSanta';
 import GetRandom from './components/GetRandom';
