@@ -30,12 +30,20 @@ class SecretSanta extends Component{
 
     return (
       <div>
+        <div id="santa" ClassName="row">
+          <div ClassName="">
+            <center>
+              <img src="images/iconSanta.png"
+              border="0" alt="" title=""/>
+            </center>
+          </div>
+        </div>
         {assignments.length === 0
          ? <UsersTable records={records} />
          : <AssignmentsTable assignments={assignments} />}
 
         <p>
-          <a href="#" onClick={ (e) => { this.setSecretSantaList(e) } }>Generate Secret Santas!</a>
+          <a href="#"  className="btn btn-danger btn-lg" onClick={ (e) => { this.setSecretSantaList(e) } }>Generate Secret Santas!</a>
         </p>
       </div>
     )
@@ -114,27 +122,31 @@ function UsersTable(props) {
 
 function AssignmentsTable(props) {
   return (
-    <table className="table">
-      <thead>
-        <tr>
-          <th scope="col">Secret Santa</th>
-          <th scope="col">Receiver</th>
-        </tr>
-      </thead>
-      <tbody>
-        { props.assignments.map((assignment) => {
-          const sender = assignment.sender;
-          const receiver = assignment.receiver;
-
-          return (
-            <tr key={ `santa-${sender.id}` }>
-              <td>{ sender.fields.name }</td>
-              <td>{ receiver.fields.name }</td>
+    <div className="card jumbotron-card">
+      <div className="jumbotron">
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">Secret Santa</th>
+              <th scope="col">Receiver</th>
             </tr>
-          );
-        })}
-      </tbody>
-    </table>
+          </thead>
+          <tbody>
+            { props.assignments.map((assignment) => {
+              const sender = assignment.sender;
+              const receiver = assignment.receiver;
+
+              return (
+                <tr key={ `santa-${sender.id}` }>
+                  <td>{ sender.fields.name }</td>
+                  <td>{ receiver.fields.name }</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
   )
 }
 
