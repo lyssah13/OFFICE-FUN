@@ -9,12 +9,15 @@ class HomePage extends Component {
           <div id="" class="row">
             <div class="col-xs-12 col-md-6 col-lg-2 offset-lg-2">
               <center>
+              <a href="/secret-santa">
                 <img id="my-img" className="homepage-icon"
                 src="images/icons1.png"
                 onmouseover="this.src='images/icons1hover.png'"
                 onmouseout="this.src='images/icons1.png'"
                 border="0" alt="" title=""/>
+                </a>
                 <p>Send a private email to all the participants in a second! And to you, the organizar, we will also send a random person to be the First to start! </p>
+
             </center>
             </div>
 
@@ -48,10 +51,12 @@ class HomePage extends Component {
 
             <div id="" class="col-xs-12 col-md-6 col-lg-2">
               <center>
+                <a href="/get-random">
                 <img className="homepage-icon" src="images/icons4.png"
                 onmouseover="this.src='images/icons4hover.png'"
                 onmouseout="this.src='images/icons4.png'"
                 border="0" alt="" title=""/>
+                </a>
                 <p>Are you organizing a contest, giveaway, raffle* or survey amongst the office and need to draw a random name / number? Our customers usually need to choose a winner from: </p>
               </center>
             </div>
