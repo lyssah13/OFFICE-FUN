@@ -55,6 +55,15 @@ HEADER
   padding: 1.5rem;
   text-align: center;
 }
+
+#secret-santa {
+  background-color: #f2c249;
+}
+
+.jumbotron-card {
+  padding: 1.5rem;
+  text-align: center;
+}
 /******************************************************
 CONTACT AND MEDIA
 ******************************************************/
