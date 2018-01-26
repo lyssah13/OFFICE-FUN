@@ -44,7 +44,16 @@ HEADER
 }
 #santa {
   background-color: #f24e49;
-  height: 150px;
+  /*height: 150px;*/
+}
+
+#get-random {
+  background-color: #f2c249;
+}
+
+.jumbotron-card {
+  padding: 1.5rem;
+  text-align: center;
 }
 /******************************************************
 CONTACT AND MEDIA

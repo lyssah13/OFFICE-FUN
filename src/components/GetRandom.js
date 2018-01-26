@@ -44,16 +44,23 @@ class GetRandom extends Component {
     else {
       return (
         <div className="GetRandom">
-          <header className="GetRandom-header">
-            <h2 className="App-title">Get Random</h2>
-          </header>
+
+          <div id="get-random" ClassName="row">
+            <div ClassName="">
+              <center>
+                <img src="images/iconRandom.png"
+                border="0" alt="" title=""/>
+              </center>
+            </div>
+          </div>
           { this.state.random_user === null
             ? <UsersTable records={records} />
             : <DisplayRandomUser random_user={ this.state.random_user } />
           }
           <p>
-            <a href="#" onClick={ (e) => { this.setRandomUser(e) } }>Get Random!</a>
+            <a href="#" className="btn btn-warning btn-lg" onClick={ (e) => { this.setRandomUser(e) } }>Get Random!</a>
           </p>
+
         </div>
       );
     }
@@ -63,7 +70,13 @@ class GetRandom extends Component {
 function DisplayRandomUser(props) {
   if (props.random_user != null) {
     return (
-      <p>{ props.random_user.fields.name }</p>
+      <div className="card jumbotron-card">
+        <div className="jumbotron card-body">
+          <h2>
+            { props.random_user.fields.name }
+          </h2>
+        </div>
+      </div>
     );
   }
   else {
@@ -73,7 +86,7 @@ function DisplayRandomUser(props) {
 
 function UsersTable(props) {
   return (
-    <table>
+    <table className="table">
       <thead>
         <tr>
           <th scope="col">ID</th>
